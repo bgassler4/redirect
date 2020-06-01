@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirect!</title>
+  </head>
+  <body>
+    <script>
+      fetch(
+        `https://b9xcebjau9.execute-api.ap-southeast-2.amazonaws.com/dev?url=${window.location.href}`
+      )
+        .then((data) => data.json())
+        .then((data) => {
+          console.log(data);
+          window.location.replace(data);
+        });
+    </script>
+  </body>
+</html>
