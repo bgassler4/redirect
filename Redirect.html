@@ -10,7 +10,8 @@
       fetch(lambdaUrl)
         .then((data) => data.json())
         .then((data) => {
-          console.log(data);
+          console.log(`Redirect url returned: ${data}`);
+          debugger;
           window.location.replace(data);
         });
     </script>
