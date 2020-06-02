@@ -6,9 +6,8 @@
   </head>
   <body>
     <script>
-      fetch(
-        `https://b9xcebjau9.execute-api.ap-southeast-2.amazonaws.com/dev?url=${window.location.href}`
-      )
+      const lambdaUrl = `https://b9xcebjau9.execute-api.ap-southeast-2.amazonaws.com/dev?url=${window.location.href}`;
+      fetch(lambdaUrl)
         .then((data) => data.json())
         .then((data) => {
           console.log(data);
