@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
   const response = {
     statusCode: 200,
     data: {
-      redirectUrl: "https://usefyi.com/blog/",
+      redirectUrl: "https://www.google.com/",
     },
   };
   return response;
